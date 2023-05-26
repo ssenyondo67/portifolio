@@ -1,0 +1,71 @@
+[ {
+  "main":[
+      {
+            "name":"rock-paper-game",
+            "title":"Rock, Paper, Scissors game",
+            "image":"./assets/images/rock-paper-game.png",
+            "live":"https://rock-paper-scissors-master-ssenyondo67.vercel.app/",
+            "git":"https://github.com/ssenyondo67/rock-paper-scissors-master",
+            "descrition":"Rock Paper Web App is an interactive game built using vanilla JavaScript, HTML, and CSS. This engaging web application brings the classic game of rock-paper-scissors to life, providing users with an enjoyable and entertaining experience. The app has been meticulously crafted using front-end technologies, making it lightweight and fast-loading. Its intuitive user interface allows players to easily select their desired move - rock, paper, or scissors - by simply clicking on the corresponding buttons. One of the standout features of Rock Paper Web App is its ability to maintain the state of the score per browser. With its clean and visually appealing design, Rock Paper Web App provides a seamless and enjoyable gaming experience."
+      },
+      {
+      "name":"rest-country",
+            "title":"Rest countries api with theme switcher",
+            "image":"./assets/images/rest-country.png",
+            "live":"https://rest-countries-api-with-color-theme-switcher-master-seven.vercel.app/",
+            "git":"https://github.com/ssenyondo67/rest-countries-api-with-color-theme-switcher-master",
+            "descrition":"Rest countries api with theme switcher Web App is an interactive app built using vanilla JavaScript, HTML, and CSS. This engaging web application enable user to browse through countries, providing users with an enjoyable and informative experience about countries. The app has been meticulously crafted using front-end technologies, making it lightweight and fast-loading. Its intuitive user interface allows users to easily select their desired country by simply clicking on the corresponding buttons. One of the standout features of rest countries api with theme switcher Web App is its ability to navigate countries through the neighbour buttons on each coutry detraies. With its clean and visually appealing design, rest countries api with theme switcher App provides a seamless and enjoyable learning experience."
+      }     
+  ],
+  "others":[   
+      {
+            "name":"intro-section",
+            "title":"Intro section with dropdown navigation",
+            "image":"./assets/images/intro-section.png",
+            "git":"https://github.com/ssenyondo67/intro-section-with-dropdown-navigation",
+            "live":"https://intro-section-with-dropdown-navigation-pearl-nu.vercel.app",
+            "descrition":"Intro section is an interactive single page of Web App that is built using vanilla JavaScript, HTML, and CSS. This engaging web application page enable user to view modern site dropdown navigation."
+      },
+      {     "name":"comment",
+            "title":"Interactive comments section",
+            "image":"./assets/images/comment.png",
+            "live":"https://interactive-comments-section-main-ten.vercel.app/",
+            "git":"https://github.com/ssenyondo67/interactive-comments-section-main",
+            "descrition":"Interactive comments section is an interactive single page of Web App that is built using vanilla JavaScript,CSS and using React. This engaging web application page enable user to make comment delete comment and edit his or her comment."
+      },
+      {     
+            "name":"ecommerce-product",
+            "title":"Ecommerce product page",
+            "image":"./assets/images/ecommerce-product.png",
+            "live":"https://ecommerce-product-page-main-4flj.vercel.app/",
+            "git":"https://github.com/ssenyondo67/ecommerce-product-page-main",
+            "descrition":"Ecommerce-product is an interactive single page of Web App that is built using vanilla JavaScript,CSS and using React. This engaging web application page enable user to view the details of product select quatinty he wants and then add to cart, he can also delete product from the cart"
+      },
+      { 
+            "name":"multistep",
+            "title":"Multi step form",
+            "image":"./assets/images/multistep.png",
+            "live":"https://multi-step-form-two-khaki.vercel.app/",
+            "git":"https://github.com/ssenyondo67/Multi-step-form",
+            "descrition":"Multi-step-form is an interactive single page of Web App with mulitple steps that is built using vanilla JavaScript,CSS. This engaging web application page enable user to enter their details and then select their choice plan, the app will show the total calculated cost of all selected items"
+      },
+      
+      {
+            "name":"age-calculator",
+            "title":"Age calculator app",
+            "image":"./assets/images/age-calculator.png",
+            "live":"https://age-calculator-app-main-six.vercel.app/",
+            "git":"https://github.com/ssenyondo67/age-calculator-app-main",
+            "descrition":"Age calculator app is an interactive single page Web App that is built using vanilla JavaScript,CSS. This engaging web application page enable user to enter his birth date the app will calculate and show user the number of years month and days"
+      },
+      {
+            "name":"Grid-section",
+            "title":"Testimonials grid section",
+            "image":"./assets/images/grid-section.png",
+            "live":"https://testimonials-grid-section-rosy-six.vercel.app/",
+            "git":"https://github.com/ssenyondo67/testimonials-grid-section",
+            "descrition":"Testimonials grid section is an intiresting single page of Web App that is built using vanilla JavaScript,Tailwind. This engaging web application page shows moderm grid display"
+      }
+  ]
+}
+]

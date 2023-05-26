@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon-32x32.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="./assets/styles/style.css">
+<title>Micheal Frontend | JavaScript fullstack </title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="navbar">
+                <i class="bi bi-list isIconHiden" id="openMenu"></i>
+                <nav class="nav-menu isNavHiden" id="menu">
+                    <i class="bi bi-x isIconHiden" id="closeMenu"></i>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html#contact" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html#portifolio" class="nav-link">Portifolio</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+       
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="logo" class="logo-img">
+            </div>
+        </div>
+    </header>
+    <section class="hero" id="hero">
+       <div class="hero-container">
+            <div class="hero-image">
+                <img src="./assets/images/herosmall.png" alt="image" class="hero-image" id="heroImage">
+            </div>
+            <div class="hero-content">
+            <div class="content">
+                    <h1 class="title">Hi I’m <strong>SSENYONDO</strong>. I am full stack JavaScript developer</h1>
+                    <p class="descrip">i build things for the web using simplest tool and java-script
+                    </p>
+            </div>
+            <a type="button" href="mailto:ssenyondom67.portifolio@gmail.com" class="btn hero-btn">Mail me now <i class="bi bi-envelope-fill"></i></a>
+            </div>
+       </div>
+    </section>
+    <section class="work">
+     <div class="work-container">
+        <h2 class="section-title">some of my work</h2>
+        <div class="main-projects">            
+            <div class="project project1">
+                <div class="project-image">
+                    <img src="" alt="" class="project-img">
+                    <ul class="image-cover">
+                        <li class="item">
+                            <a href="" class="link" title="Github link to code">
+                              <i class="bi bi-github"></i>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link" title="Link to live demo ">
+                                <i class="bi bi-display"></i>
+                            </a>
+                        </li>
+                    </ul>              
+                </div>
+                <div class="project-content">
+                    <div class="content">
+                        <h3 class="project-title"></h3>
+                        <p class="project-descrip"> </p>
+                       
+                    </div>
+                    <ul class="language">
+                        <li><abbr title="HyperText Markup Language"> HTML </abbr></li>
+                        <li><abbr title="Cascading Style Sheets"> CSS</abbr> </li>
+                        <li><abbr title="javaScript">JS</abbr></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="project project2">
+                <div class="project-image">
+                    <img src="" alt="" class="project-img">  
+                    <ul class="image-cover">
+                        <li class="item">
+                            <a href="" class="link" title="Github link to code">
+                              <i class="bi bi-github"></i>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="link" title="Link to live demo ">
+                                <i class="bi bi-display"></i>
+                            </a>
+                        </li>
+                    </ul>             
+                </div>
+                <div class="project-content">
+                    <div class="content">
+                        <h3 class="project-title"></h3>
+                        <p class="project-descrip"></p>
+                    </div>
+                    <ul class="language">
+                        <li><abbr title="HyperText Markup Language"> HTML </abbr></li>
+                        <li><abbr title="Cascading Style Sheets"> CSS</abbr> </li>
+                        <li><abbr title="javaScript">JS</abbr></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+        <a href="about.html#portifolio" class="more-btn">See more work</a>
+     </div>
+    </section>
+    <section class="contact">
+     <div class="contact-container">
+        <div class="form-container">
+            <h3 class="form-title">Write message to me  </h3>
+            <form action="" class="form">
+                <div class="input-group">
+                    <label for="email" class="label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="message" class="label">Message</label>
+                    <textarea name="message" id="message" placeholder="Enter text here " ></textarea>
+                    <span class="error" id="messageError"></span>
+                </div>
+                <div class="input-group ">
+                    <button type="submit" class="btn form-btn">Send 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                            <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+                          </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="link-container">
+            <h3 class="link-title">Lets link up on</h3>
+            <ul class="links">
+                <li class="link">
+                    <a href="#" class="link-element">
+                        <i class="bi bi-twitter" aria-hidden="true"></i>
+                        <span>@ssenyondo</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="#" class="link-element">
+                        <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        <span>@ssenyondo</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="#" class="link-element">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+                          </svg>
+                        <span>@ssenyondo</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="#" class="link-element">
+                        <i class="bi bi-instagram"></i>
+                        <span>@ssenyondo</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+     </div>
+
+    </section>
+    <ul class="side-links">
+        <li class="side-link">
+            <a href="#" class="side-link-element">
+                <i class="bi bi-instagram" aria-hidden="true"></i>               
+        </li>
+        <li class="side-link">
+            <a href="#" class="side-link-element">
+                <i class="bi bi-linkedin" aria-hidden="true"></i>               
+        </li>
+        <li class="side-link">
+            <a href="#" class="side-link-element">
+                <i class="bi bi-twitter" aria-hidden="true"></i>               
+        </li>
+        <li class="side-link">
+            <a href="#" class="side-link-element">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+                  </svg> 
+            </a>          
+        </li>
+        
+    </ul>
+    <div class="side-email">
+        <span>ssenyondom67@gmail.com</span>
+    </div>
+    <footer class="footer">
+       <a href="#hero" class="upArrow" title="move up"><i class="bi bi-arrow-up-circle"></i></a> 
+     <hr>
+     <small>copyright @2023</small>
+    </footer>   
+    
+     <!-- js script -->
+     <script src="./assets/js/script.js"></script>
+     <script >
+        
+            fetch('./projects.json')
+            .then(res => res.json())
+            .then(data =>{
+                    fillMainProjects(data); 
+            })
+
+        function fillMainProjects(data){
+            const cards =document.getElementsByClassName('project');
+            for(let index=0;index<cards.length;index++){
+                cards[index].children[0].children[0].src=data[0].main[index].image;
+                cards[index].children[1].children[0].children[0].textContent=data[0].main[index].title;
+                cards[index].children[1].children[0].children[1].textContent=data[0].main[index].descrition.substr(0,300)
+                cards[index].children[0].children[1].children[0].children[0].href=data[0].main[index].git
+                cards[index].children[0].children[1].children[1].children[0].href=data[0].main[index].live
+                
+            }
+        }
+     </script>
+</body>
+</html>

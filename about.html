@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon-32x32.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Frontend Micheal</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="navbar">
+                <i class="bi bi-list isIconHiden" id="openMenu"></i>
+                <nav class="nav-menu isNavHiden" id="menu">
+                    <i class="bi bi-x isIconHiden" id="closeMenu"></i>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portifolio" class="nav-link">Portifolio</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+       
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="logo" class="logo-img">
+            </div>
+        </div>
+    </header>
+    <section class="about" id="about">
+       <div class="about-container">
+            <div class="personal-info">
+                <div class="about-image">
+                    <img src="./assets/images/facetrans.png" alt="image" class="hero-image">
+                </div>
+                <h3 class="about-title">Hi i am Ssenyondo Micheal.</h3>
+                <p class="about-descript">i am currently based in  Kampala Uganda 
+                    i’m well versed in the front-end technology
+                    and have a passion for building great user
+                    experience</p>
+            </div>
+            
+            <div class="skill">
+                    <p class="skill-descript">Here are a few technologies I’ve been working with recently</p>
+                    <ul class="skills">
+                        <li>JavaScript (ES6+)</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Tailwind</li>
+                        <li>figma</li>
+                        <li>React</li>
+                        <li>learning nodejs</li>
+                    </ul>
+            </div>
+        
+       </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact-container ">
+            <div class="link-container-about">
+                <h3 class="link-title">Contact Information</h3>
+                <p class="link-descript">Say something to start a live chat!</p>
+                <ul class="contact-link">
+                    <li class="link">                        
+                            <i class="bi bi-telephone-plus"></i>
+                            <span class="value">+256 705 942787</span>                       
+                    </li>
+                    <li class="link">                                                  
+                            <i class="bi bi-envelope"></i>
+                            <span class="value">ssenyondom67@gmail.com</span>                       
+                    </li>
+                    <li class="link">                        
+                            <i class="bi bi-geo-alt"></i>
+                            <span class="value">Kampala uganda</span>                       
+                    </li>
+                </ul>
+                <ul class="links">
+                    <li class="link">
+                        <a href="#" class="link-element">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="#" class="link-element">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="#" class="link-element">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="#" class="link-element">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div> 
+           <div class="form-container">
+               <h3 class="form-title">Write message to me  </h3>
+               <form action="" class="form">
+                   <div class="form-grid">
+                        <div class="input-group input-group1">
+                            <label for="fname" class="label">First name</label>
+                            <input type="text" name="fname" id="fname" placeholder="mark">
+                            <span class="error" id="fnameError"></span>
+                        </div>
+                        <div class="input-group input-group2">
+                            <label for="lname" class="label">Last name</label>
+                            <input type="text" name="lname" id="lname" placeholder="done">
+                            <span class="error" id="lnameError"></span>
+                        </div>
+                    <div class="input-group input-group3">
+                        <label for="email" class="label">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                        <span class="error" id="emailError"></span>
+                    </div>
+                    
+                    <div class="input-group input-group4">
+                            <label for="phone" class="label">Phone</label>
+                            <input type="tel" name="phone" id="phone" placeholder="0705942787">
+                            <span class="error" id="phoneError"></span>
+                    </div>
+                </div>
+                    <div class="input-group input-group5">
+                        <label for="message" class="label">Message</label>
+                        <textarea name="message" id="message" placeholder="Enter message here"></textarea>
+                        <span class="error" id="messageError"></span>
+                    </div>
+                  
+                   <div class="input-group">
+                        <button type="submit" class="btn form-btn">Send</button>
+                   </div>
+               </form>
+           </div>
+          
+        </div>
+   
+       </section>
+
+       <ul class="side-links">
+        <li class="side-link">
+            <a href="#" class="side-link-element">
+                <i class="bi bi-instagram" aria-hidden="true"></i>               
+        </li>
+        <li class="side-link">
+            <a href="#" class="side-link-element">
+                <i class="bi bi-linkedin" aria-hidden="true"></i>               
+        </li>
+        <li class="side-link">
+            <a href="#" class="side-link-element">
+                <i class="bi bi-twitter" aria-hidden="true"></i>               
+        </li>
+        <li class="side-link">
+            <a href="#" class="side-link-element">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+                  </svg> 
+            </a>          
+        </li>
+        
+    </ul>
+    <div class="side-email">
+        <span>ssenyondom67@gmail.com</span>
+    </div>
+    <section class="work" id="portifolio">
+        <div class="work-container">
+           <h2 class="section-title">some of my work</h2>
+           <div class="main-projects grid otherprojects" id="projects">            
+              
+               
+           </div>
+         
+        </div>
+       </section>
+    <footer class="footer">
+        <a href="#about" class="upArrow" title="move up"><i class="bi bi-arrow-up-circle"></i></a> 
+     <hr>
+     <small>copyright @2023</small>
+    </footer>   
+    
+     <!-- js script -->
+     <script src="./assets/js/script.js"></script>
+    
+     <script >
+        
+        fetch('./projects.json')
+        .then(res => res.json())
+        .then(data =>{
+                data[0].others.forEach(project =>  createProject(project)); 
+        })
+
+    function createProject(project){
+        const langElem=document.createElement('ul')
+    addclass(langElem,'language')
+    langElem.innerHTML=` <li><abbr title="HyperText Markup Language"> HTML </abbr></li>
+                            <li><abbr title="Cascading Style Sheets"> CSS</abbr> </li>
+                            <li><abbr title="javaScript">JS</abbr></li>`
+        const contentElem =document.createElement('div')
+        addclass(contentElem,'content');
+        const h3 =document.createElement('h3');
+        addclass(h3,'project-title');
+        h3.innerText=project.title
+        const p =document.createElement('p');
+        addclass(p,'project-descript');
+        p.innerText=project.descrition.substr(0,300)
+        insert(contentElem,h3)
+        insert(contentElem,p)
+        const projcontentElem =document.createElement('div')
+        addclass(projcontentElem,'project-content');
+        insert(projcontentElem,contentElem)
+        insert(projcontentElem,langElem)
+        // -----------------------image section------
+        const coverElem=document.createElement('ul')
+        addclass(coverElem,'image-cover')
+        coverElem.innerHTML=`  <li class="item">
+                                <a href=${project.git} class="link" title="Github link to code">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href=${project.live} class="link" title="Link to live demo ">
+                                    <i class="bi bi-display"></i>
+                                </a>
+                            </li>`
+
+        const imgElem =document.createElement('img')
+        imgElem.setAttribute('src',project.image)
+        addclass(imgElem,'project-img')
+        const imageElem =document.createElement('div')
+        addclass(imageElem,'project-image');
+        insert(imageElem,imgElem)
+        insert(imageElem,coverElem)
+
+        const projectElem =document.createElement('div')
+        addclass(projectElem,'project');
+        insert(projectElem,imageElem)
+        insert(projectElem,projcontentElem)
+        
+        insert(document.getElementById('projects'),projectElem)
+        function addclass(element,classname){
+            element.classList.add(classname)
+        }
+        function insert(element, item){
+            element.insertAdjacentElement('beforeend',item)
+        }
+            
+    }
+
+   
+ </script>
+
+</body>
+</html>
