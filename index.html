@@ -127,16 +127,16 @@
      <div class="contact-container">
         <div class="form-container">
             <h3 class="form-title">Write message to me  </h3>
-            <form action="" class="form">
+            <form  class="form" id="form1" novalidate>
                 <div class="input-group">
                     <label for="email" class="label">Email</label>
-                    <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
                     <span class="error" id="emailError"></span>
                 </div>
                 <div class="input-group">
                     <label for="message" class="label">Message</label>
-                    <textarea name="message" id="message" placeholder="Enter text here " ></textarea>
-                    <span class="error" id="messageError"></span>
+                    <textarea name="message" id="message" minlength="10" placeholder="Enter text here " required ></textarea>
+                    <span class="error active" id="messageError"></span>
                 </div>
                 <div class="input-group ">
                     <button type="submit" class="btn form-btn">Send 
@@ -213,6 +213,13 @@
     </footer>   
     
      <!-- js script -->
+     <script type="text/javascript"
+     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   
+    <script type="text/javascript">
+        emailjs.init('NwggJA-3ZKN-6JpQd')
+    </script>
+
      <script src="./assets/js/script.js"></script>
      <script >
         
@@ -233,6 +240,38 @@
                 
             }
         }
+
+    
+    const form1 =document.getElementById('form1')
+    
+    form1.addEventListener('submit',(event)=>{
+        event.preventDefault()
+        if(!email.validity.valid){
+            showEmailError()
+        }else if(!textarea.validity.valid){
+            showMessageError()
+        }else{
+            const serviceID = 'default_service';
+            const templateID = 'template_mbseq2p';
+            const templateParams ={
+               user_email:email.value,
+               message:textarea.value,
+               phone:"xxxx",
+               user_name:'user',
+            }
+
+            emailjs.send(serviceID, templateID, templateParams)
+                .then(() => {
+                btn.value = 'Send Email';
+                alert('Sent!');
+                }, (err) => {
+                btn.value = 'Send Email';
+                alert(JSON.stringify(err));
+                });
+
+        }
+    })
+
      </script>
 </body>
 </html>

@@ -10,6 +10,8 @@
   --color-black:#141414;
   --box-shadow:3px 3px 10px 2px rgba(14, 14, 14, 0.46);
   --outline:2px solid blue;
+  --color-error:#5f0505;
+  --color-link:#101018;
 }
 
 ul li {
@@ -18,7 +20,7 @@ ul li {
 
 a {
   text-decoration: none;
-  color: var(--color-d-gray);
+  color: var(--color-link);
 }
 
 i {
@@ -43,6 +45,10 @@ button {
   outline: none;
   border: 0;
   background: transparent;
+}
+
+input {
+  position: relative;
 }
 
 section + section {
@@ -306,6 +312,9 @@ header .header-container .logo {
   color: var(--color-d-gray);
   padding-left: 0.2rem;
   margin-block: 0.5rem;
+}
+.contact .form-container .input-group .error.active {
+  color: var(--color-error);
 }
 .contact .form-container .form-btn {
   padding: 0.5rem 2rem;

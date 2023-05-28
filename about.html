@@ -114,9 +114,9 @@
                     </li>
                 </ul>
             </div> 
-           <div class="form-container">
+           <div class="form-container" >
                <h3 class="form-title">Write message to me  </h3>
-               <form action="" class="form">
+               <form action="" class="form" novalidate id="form2">
                    <div class="form-grid">
                         <div class="input-group input-group1">
                             <label for="fname" class="label">First name</label>
@@ -130,19 +130,19 @@
                         </div>
                     <div class="input-group input-group3">
                         <label for="email" class="label">Email</label>
-                        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
                         <span class="error" id="emailError"></span>
                     </div>
                     
                     <div class="input-group input-group4">
                             <label for="phone" class="label">Phone</label>
-                            <input type="tel" name="phone" id="phone" placeholder="0705942787">
+                            <input type="tel" name="phone" id="phone" placeholder="0705942787"  maxlength="10">
                             <span class="error" id="phoneError"></span>
                     </div>
                 </div>
                     <div class="input-group input-group5">
                         <label for="message" class="label">Message</label>
-                        <textarea name="message" id="message" placeholder="Enter message here"></textarea>
+                        <textarea name="message" id="message" placeholder="Enter message here" required minlength="10"></textarea>
                         <span class="error" id="messageError"></span>
                     </div>
                   
@@ -196,6 +196,12 @@
      <hr>
      <small>copyright @2023</small>
     </footer>   
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      
+      <script type="text/javascript">
+        emailjs.init('NwggJA-3ZKN-6JpQd')
+      </script>
     
      <!-- js script -->
      <script src="./assets/js/script.js"></script>
@@ -265,8 +271,70 @@
             
     }
 
+    const phone =document.getElementById('phone')
+    const phoneError =document.querySelector('#phone + span.error')
+    const user_name=`${document.getElementById('fname').value} ${document.getElementById('lname').value}`||'user' 
+
+    const form2 =document.getElementById('form2')
+
+
+    phone.addEventListener('input', (evet)=>{
+        if(phone.validity.valid){
+        phoneError.textContent ="",
+        phoneError.className ="error active";
+        phone.removeEventListener('input',()=>{})
+        }else{
+            showPhoneError()
+        }
+    })
+
+    form2.addEventListener('submit',(event)=>{
+        event.preventDefault()
+        if(!email.validity.valid){
+            showEmailError()
+        }else if(!textarea.validity.valid){
+            showMessageError()
+        }else if(!phone.validity.valid){
+            showPhoneError()
+        }else{
+            const serviceID = 'default_service';
+            const templateID = 'template_mbseq2p';
+            const templateParams ={
+               user_email:email.value,
+               message:textarea.value,
+               phone:phone.value,
+               user_name:user_name,
+            }
+
+            emailjs.send(serviceID, templateID, templateParams)
+                .then(() => {                
+                alert('Sent!');
+                }, (err) => {               
+                alert(JSON.stringify(err));
+                });
+
+                }
+            
+    })
+    
+    function showPhoneError() {
+    if (phone.validity.valueMissing) {
+      // If the field is empty,
+      
+      phoneError.textContent = "You need to enter mesage.";
+    }else if (phone.validity.toolong) {
+       
+        phoneError.textContent = "Entered value should be 10 digits.";
+      }
+
+    // Set the styling appropriately
+    phoneError.className = "error active";
+  }
+
+   
+
    
  </script>
-
-</body>
+  
+   </body>
 </html>
