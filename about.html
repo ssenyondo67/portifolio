@@ -307,9 +307,11 @@
             }
 
             emailjs.send(serviceID, templateID, templateParams)
-                .then(() => {                
+                .then(() => {   
+                 form2.reset()
                 alert('Sent!');
-                }, (err) => {               
+                }, (err) => {   
+                    form2.reset()            
                 alert(JSON.stringify(err));
                 });
 
